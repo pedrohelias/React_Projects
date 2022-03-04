@@ -10,11 +10,11 @@ export default function CartelaBingo(props) {
     const random = Math.floor(Math.random() * props.cartela.length) //vai gerar um número aleatorio entre as possibilidades e vai lançar uma pergunta e uma resposta
     
     const novoValor = (argumento) => {
-        setValorrandom(argumento)
+        setValorrandom(argumento) //gera um novo valor para a variavel aleatoria
     }
    
     const resetaValor = () => {
-        setValorrandom(0)
+        setValorrandom(0) //seta o valor da variavel aleatoria para zero
     }
     
 
@@ -25,7 +25,7 @@ export default function CartelaBingo(props) {
             <Button title="teste" onPress={() => {
                 const random = Math.floor(Math.random() * props.cartela.length) //vai gerar um número aleatorio entre as possibilidades e vai lançar uma pergunta e uma resposta
 
-                novoValor(random)
+                novoValor(random) //vai adicionar um valor randomico para que seja possivel escolher um numero da cartela
             }}/>
             
             <Text>estamos olhando o nó {valorRandom} com o valor de {props.cartela[valorRandom].numero}</Text>
@@ -33,15 +33,15 @@ export default function CartelaBingo(props) {
             <Text>a variavel randomica esta setada em {valorRandom}</Text>
             
             <Button title="Reset" onPress={() => {
-                resetaValor()
-            }}/>
+                resetaValor() 
+            }}/> 
 
             <Text>Monitorando o lenght, total {props.cartela.length}</Text>
         
         </View>
 
         
-
+// Os textos vao mostrar o que ha dentro do objeto Cartela
         
     );
     
