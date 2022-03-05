@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 
 import CartelaBingo from './components/CartelaBingo';
+import CartelaVetor from './components/CartelaVetor';
 import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
@@ -16,12 +17,16 @@ export default function App() {
   
   ]
 
+  //const cartelaVetor = [5,10,6,2,3,4,1]
+  
+
   
   return (
     <View style={styles.container}>
       <Text>teste no dia tal</Text>
       <StatusBar style="auto" />
       <CartelaBingo cartela = {cartela}></CartelaBingo>
+      <CartelaVetor /*cartelaVetor = {cartelaVetor}*/></CartelaVetor>
     </View>
   );
 }
